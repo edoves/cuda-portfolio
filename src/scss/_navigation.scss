@@ -1,0 +1,10 @@
+.navbar-nav  {
+    color: #fff;
+        li {
+            padding: 1.6rem;
+            @include respond(ipad) {
+                padding: 0;
+            }
+        }        
+}
+

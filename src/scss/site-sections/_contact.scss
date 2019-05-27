@@ -1,0 +1,39 @@
+.contact {
+    background-color: var(--contact-bg);
+    padding: 8rem 0;
+    color: var(--primary-font-color);
+    text-align: center;
+
+    &__header {
+        h2 {
+            @include sectionHeadingTxt;
+            &:after {
+                content: "";
+                display: block;
+                width: 66px;
+                height: 5px;
+                background-color: #273a71;
+                margin: 20px auto 24px;
+            }
+            
+        }
+        .description {
+            @include desc;
+            margin-bottom:5rem;
+        }
+    }
+
+    &__form {
+        .form-control {
+            background: #273a71;
+            border: 0;
+            color: #fff;
+            padding: 2rem;
+        }
+        .btn {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+    }
+}
+

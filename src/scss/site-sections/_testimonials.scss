@@ -1,0 +1,58 @@
+.testimonials {
+    background-color: var(--testimonial-bg);
+    padding: 8rem 0;
+    color: var(--primary-font-color);
+    text-align: center;
+
+    &__header {
+        h2 {
+            @include sectionHeadingTxt;
+            &:after {
+                content: "";
+                display: block;
+                width: 66px;
+                height: 5px;
+                background-color: #b73c6d;
+                margin: 20px auto 24px;
+            }
+            
+        }
+        .description {
+            @include desc;
+            margin-bottom:5rem;
+        }
+    }
+
+    &__offer {
+        font-size: 1.6rem;
+
+        img {
+            margin-bottom: 1.6rem;
+            border-radius: 50%;
+        }
+        h3 {
+            text-transform: uppercase;
+        }
+
+        blockquote{
+            padding: 0;
+            border: none;
+            font-style: italic;
+            text-align: left;
+            // margin-left: -50px;
+            cite {
+                display: block;
+                font-style: normal;
+                text-transform: uppercase;
+                color: #fff;
+                margin: 15px 0 0 0;
+            }
+
+            small {
+                color: #ffdd99;
+                font-weight: normal;
+            }
+        }
+    }
+}
+

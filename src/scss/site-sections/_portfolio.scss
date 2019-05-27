@@ -1,0 +1,73 @@
+.portfolio {
+    background-color: var(--portfolio-bg);
+    padding: 8rem 0;
+    color: var(--tertiary-font-color);
+    text-align: center;
+
+    &__header {
+        h2 {
+            @include sectionHeadingTxt;
+            &:after {
+                content: "";
+                display: block;
+                width: 66px;
+                height: 5px;
+                background-color: #e5c37f;
+                margin: 20px auto 24px;
+            }
+            
+        }
+        .description {
+            @include desc;
+            margin-bottom:2rem;
+        }
+    }
+
+    &__nav {
+        font-size: 1.6rem;
+        li {
+            padding: 1.3rem;
+        }
+        a.active {
+            background-color: white;
+        }
+        a {
+            color: #393939;
+            width: 83px;
+            height: 38px;
+            line-height: 41.5px;
+            text-decoration: none;
+            display: inline-block;
+            background: rgba(0,0,0, 0.08);
+            border-radius: 3px;
+        }
+        a:hover {
+            background: white;
+            color: #393939;
+        }
+    }
+
+    &__offer {
+        font-size: 1.6rem;
+        img {
+            margin-bottom: 1.6rem;
+        }
+        h3 {
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    button {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+
+                @include respond(ipad) {
+                    font-size: 1.2rem;
+                }
+    }
+}
+

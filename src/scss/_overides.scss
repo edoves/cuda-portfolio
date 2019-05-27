@@ -1,0 +1,41 @@
+// Bootstrap overides
+.bg-light {
+    background-color: var(--hero-bg)!important;
+}
+
+.nav-link {
+    color: #fff!important;
+    text-transform: uppercase;
+}
+
+// button 
+.btn-danger {
+    background-color: #eb7d4b;
+    border: 0;
+    padding: 2rem 8.3rem;
+
+        @include respond(iPhoneX) {
+            padding: 1rem 2rem;
+        }
+}
+
+
+.btn-success {
+    background-color: #17c2a4;
+    border: 0;
+    padding: 2rem 8.3rem;
+
+        @include respond(iPhoneX) {
+            padding: 1rem 2rem;
+        }
+}
+
+.btn-primary {
+    background-color: #30bae7;
+    border: 0;
+    padding: 2rem 8.3rem;
+
+        @include respond(iPhoneX) {
+            padding: 1rem 2rem;
+        }
+}

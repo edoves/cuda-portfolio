@@ -1,0 +1,34 @@
+.hero {
+    background-color: var(--hero-bg);
+    color: #fff;
+    padding: 10rem 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+        @include respond(ipad) {
+            padding: 5rem 0;
+        }
+    &__content {
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+
+                @include respond(ipad) {
+                    font-size: 3rem;
+                }
+
+                @include respond(iPhoneX) {
+                    font-size: 2rem;
+                }
+        }
+        button {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+
+                @include respond(ipad) {
+                    font-size: 1.2rem;
+                }
+        }
+    }
+}
